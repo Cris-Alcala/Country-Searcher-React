@@ -1,6 +1,11 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+body {
+  background-image: url('./assets/map.svg');
+  background-size:cover;
+  color: white;
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -37,10 +42,11 @@
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  background-color: rgba(128, 128, 128, 0.387);
+  background: rgba(128, 128, 128, 0.499);
   border: 2px solid black;
   border-radius: 0.5em;
   box-shadow: 1px 1px 10px 1px;
+  backdrop-filter: blur(3px);
 }
 .results ul button {
   padding: 1em;
@@ -100,7 +106,8 @@
   border: 2px solid black;
   border-radius: 0.5em;
   padding: 0.5em;
-  background: rgba(128, 128, 128, 0.345);
+  background: rgba(128, 128, 128, 0.499);
+  backdrop-filter: blur(3px);
   box-shadow: 1px 1px 10px;
   margin-bottom: 0.5em;
 }
@@ -114,7 +121,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(128, 128, 128, 0.345);
+  background: rgba(128, 128, 128, 0.499);
+  backdrop-filter: blur(3px);
   box-shadow: 1px 1px 10px;
   padding: 0.5em;
   border: 2px solid black;
@@ -135,7 +143,8 @@
   display: flex;
   flex-direction: column;
   place-items: center;
-  background: rgba(128, 128, 128, 0.345);
+  background: rgba(128, 128, 128, 0.499);
+  backdrop-filter: blur(3px);
   box-shadow: 1px 1px 10px;
   padding: 1em;
   border: 2px solid black;

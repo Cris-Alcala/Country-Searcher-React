@@ -7,7 +7,7 @@ import Weather from "./Weather";
 
 const DetailedCountry = ({ selectedCountry }) => {
   const [weather, setWeather] = useState(null);
-  const api_key = "YOUR API KEY";
+  const api_key = "bfb65ad763202efcc3ebd8595ef6da48";
   useEffect(() => {
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${selectedCountry.capital},${selectedCountry.cca2}&appid=${api_key}`
